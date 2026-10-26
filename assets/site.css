@@ -1,0 +1,75 @@
+/* One stylesheet for every page. System fonts only: the site loads nothing from anywhere else. */
+:root {
+  --bg: #ffffff;
+  --surface: #f6f6f8;
+  --ink: #16161a;
+  --body: #3d3d45;
+  --muted: #6b6b76;
+  --hairline: #e3e3e8;
+  --accent: #c8104c;
+  --accent-soft: #fde7ee;
+  --radius: 14px;
+  --measure: 44rem;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121215;
+    --surface: #1c1c21;
+    --ink: #f3f3f6;
+    --body: #d1d1d8;
+    --muted: #9a9aa6;
+    --hairline: #2e2e35;
+    --accent: #ff5c8a;
+    --accent-soft: #3a1622;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--body);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-wrap: break-word;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3 { color: var(--ink); line-height: 1.25; }
+h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 0.6rem; }
+h3 { font-size: 1.08rem; margin: 1.6rem 0 0.4rem; }
+p, ul, ol { margin: 0 0 1rem; }
+li { margin-bottom: 0.35rem; }
+small, .muted { color: var(--muted); }
+
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 16px; }
+.wide { max-width: 64rem; }
+
+.site-header { border-bottom: 1px solid var(--hairline); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.brand { color: var(--ink); font-weight: 700; text-decoration: none; }
+.site-header nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.site-header nav a { color: var(--body); text-decoration: none; font-size: 0.95rem; }
+.site-header nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+
+main { padding: 40px 0 56px; }
+.lede { font-size: 1.15rem; color: var(--body); }
+
+.app-title { display: flex; align-items: center; gap: 14px; margin-bottom: 0.6rem; }
+.app-title svg { flex: none; }
+.links { display: flex; gap: 10px; flex-wrap: wrap; padding: 0; list-style: none; }
+.links a { display: inline-block; padding: 8px 14px; border-radius: 999px; background: var(--accent-soft); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+
+.legal h2 { border-top: 1px solid var(--hairline); padding-top: 1.6rem; }
+.legal .summary { background: var(--surface); border-radius: var(--radius); padding: 18px 20px; border: 1px solid var(--hairline); }
+.legal .summary ul { margin-bottom: 0; }
+
+details { border-bottom: 1px solid var(--hairline); padding: 12px 0; }
+summary { cursor: pointer; color: var(--ink); font-weight: 600; }
+details > :not(summary) { margin-top: 0.6rem; }
+
+.site-footer { border-top: 1px solid var(--hairline); padding: 24px 0 40px; font-size: 0.9rem; color: var(--muted); }
+.site-footer a { color: var(--muted); }
