@@ -1,6 +1,6 @@
 # collagedeck.github.io
 
-The website for CollageDeck, a photo and video collage app for iPhone: its Privacy Policy, Terms of Use and Support
+The website for CollageDeck, a photo and video collage app for iPhone and iPad: its Privacy Policy, Terms of Use and Support
 page. Plain HTML and one stylesheet, with no build step, no scripts, no cookies and no analytics. GitHub Pages serves
 it as it is from the `main` branch.
 

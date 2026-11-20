@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CollageDeck Privacy Policy</title>
-  <meta name="description" content="How CollageDeck handles your photos, projects, purchases and crash reports.">
+  <meta name="description" content="How CollageDeck handles your photos, projects, purchases, crash reports and usage analytics.">
   <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -21,9 +21,9 @@
   <main class="legal">
     <div class="wrap">
       <h1>CollageDeck Privacy Policy</h1>
-      <p class="muted">Last updated: 6 November 2026</p>
+      <p class="muted">Last updated: 20 November 2026</p>
 
-      <p>This policy explains what happens to information when you use CollageDeck, a photo and video collage app for iPhone. CollageDeck is made by Mehmet Ali Akbay ("I", "me", "we"), who is responsible for the processing described here. You can reach me at mehmetaliakbay@outlook.com.</p>
+      <p>This policy explains what happens to information when you use CollageDeck, a photo and video collage app for iPhone and iPad. Where this policy says iPhone or iOS, the same applies to iPad and iPadOS. CollageDeck is made by Mehmet Ali Akbay ("I", "me", "we"), who is responsible for the processing described here. You can reach me at mehmetaliakbay@outlook.com.</p>
 
       <div class="summary">
         <p><strong>In short</strong></p>
@@ -31,7 +31,8 @@
           <li>Your photos, videos and projects stay on your iPhone. CollageDeck has no accounts and no servers of its own, and it never uploads your photos, videos or projects.</li>
           <li>If you buy CollageDeck Pro, as a subscription or as Lifetime Pro, Apple handles the payment, and RevenueCat, the purchase service CollageDeck uses, processes your purchase records.</li>
           <li>Unless you turn it off, CollageDeck sends Sentry, the crash reporting service it uses, a report when it crashes, freezes, is shut down by iOS or hits an error, and a short usage record each time you open it, so problems can be found and the app's reliability measured. These never include your photos, videos or projects, and are designed not to include anything you type. Sentry may analyse the reports automatically, including with AI, to help find the cause of a problem, but not to train AI models.</li>
-          <li>No ads, no tracking across other companies' apps or websites, and no selling of data. Sentry is used only to find and fix problems and to measure how reliably the app runs.</li>
+          <li>If you agree when CollageDeck asks, it also sends PostHog, the analytics service it uses, short records of how the app is used, such as which tools are opened and whether exports finish. These don't include your photos, videos, projects or anything you type. You can say no, or change your answer later in Settings.</li>
+          <li>No ads, no tracking across other companies' apps or websites, and no selling of data. Sentry is used only to find and fix problems and to measure how reliably the app runs, and PostHog only to understand how the app is used so it can be improved.</li>
         </ul>
       </div>
 
@@ -48,7 +49,7 @@
       <h2 id="device">2. Projects and other data on your iPhone</h2>
       <ul>
         <li>Your projects (their layouts, the text you type, drawings, stickers and other edits), the private copies of their photos and videos, and their previews are stored in CollageDeck's storage on your iPhone.</li>
-        <li>Your preferences are stored there too: appearance, haptics, favorite designs, layouts and fonts, recent colors and stickers, the last export settings, the optional signature you can add to exports, whether crash reports are on, and whether you have seen the introduction and the editor's tips.</li>
+        <li>Your preferences are stored there too: appearance, haptics, favorite designs, layouts and fonts, recent colors and stickers, the last export settings, the optional signature you can add to exports, whether crash reports are on, your answer about usage analytics, and whether you have seen the introduction and the editor's tips.</li>
         <li>None of this is sent to me or to anyone else. There is no account and no cloud sync.</li>
         <li><strong>Backups.</strong> If you back up your iPhone with iCloud Backup or to a computer, the backup can include CollageDeck's data, as it does for other apps. Apple handles those backups under its own terms.</li>
         <li><strong>Exports.</strong> An exported image or video is made on your iPhone, then saved to Photos or handed to the share sheet, as you choose; CollageDeck deletes its temporary copy. What you share is then handled by the app or service you share it with.</li>
@@ -81,46 +82,59 @@
       <p><strong>Usage sessions.</strong> While crash reports are on, CollageDeck also tells Sentry each time you open it, or come back to it after a while. A session record holds the random identifier described above, CollageDeck's version, how long the app was open, and whether that session ended normally, with an error or in a crash. It contains nothing about what you did in the app. Sentry also receives counts of reports the software discarded, for example because there was no network connection, without their content.</p>
       <p><strong>Automated analysis.</strong> Sentry analyses the reports it receives automatically, including with its AI features (called Seer). These work on the contents of the reports described above, such as the error message and where in the code the problem happened, for example to rate how readily a problem could be fixed and to help find its cause. Sentry says that by default the AI models behind these features run in its own infrastructure, and it names the companies it relies on, including AI providers, in its <a href="https://sentry.io/legal/subprocessors/">list of subprocessors</a>. CollageDeck's Sentry settings don't allow this data to be used to train AI models. See Sentry's <a href="https://docs.sentry.io/product/ai-in-sentry/ai-privacy-and-security/">AI Privacy Principles</a>.</p>
       <p>Sentry receives your IP address as part of the connection. CollageDeck's Sentry project is set to store neither your IP address nor the approximate location that could be worked out from it. Sentry stores crash reports in the United States and keeps them for up to 90 days. See the <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a>.</p>
-      <p><strong>Turning crash reports off.</strong> Crash reports and usage sessions are on when you first install CollageDeck. To turn them off, go to Settings → Help and legal → Privacy &amp; Diagnostics in CollageDeck and turn off "Share anonymous usage". Everything stops at once, apart from one record closing the session that was running. Turning it back on starts them again.</p>
+      <p><strong>Turning crash reports off.</strong> Crash reports and usage sessions are on when you first install CollageDeck. To turn them off, go to Settings → Help and legal → Privacy &amp; Diagnostics in CollageDeck and turn off "Crash reports" (called "Share anonymous usage" in CollageDeck 1.0.0). Everything stops at once, apart from one record closing the session that was running. Turning it back on starts them again.</p>
 
-      <h2 id="network">5. Other connections</h2>
+      <h2 id="analytics">5. Usage analytics (only if you agree)</h2>
+      <p>CollageDeck uses PostHog (PostHog, Inc., United States), in its EU Cloud region in Frankfurt, Germany, to understand which features are used and where people get stuck. After the introduction, CollageDeck asks you once whether to share usage analytics. It sends them only if you choose "Allow Analytics"; if you choose "Don't Share", the PostHog software in CollageDeck isn't started.</p>
+      <p>If you agree, CollageDeck sends PostHog:</p>
+      <ul>
+        <li>events that describe what you do in the app with fixed labels and numbers, for example "editor tool opened: text", "export completed: PNG" or "purchase completed: yearly plan", and the names of the screens you open, such as "home" or "editor";</li>
+        <li>technical details: CollageDeck's version, your device's model and type, iOS or iPadOS version, language and region settings, and screen size;</li>
+        <li>a random identifier for your installation and one for each time you use the app. They aren't linked to your name, email address, Apple Account or advertising identifier.</li>
+      </ul>
+      <p>Usage analytics don't include your photos, videos, collage text, project or file names, anything else you type, recordings of your screen, prices or receipt details, your location or your advertising identifier.</p>
+      <p>PostHog receives your IP address as part of the connection. CollageDeck's PostHog project is set to discard it, and CollageDeck asks PostHog not to work out a location from it. PostHog keeps usage events for up to one year. See the <a href="https://posthog.com/privacy">PostHog Privacy Policy</a>.</p>
+      <p><strong>Changing your answer.</strong> Usage analytics have their own switch, separate from crash reports. To stop them, go to Settings → Help and legal → Privacy &amp; Diagnostics in CollageDeck and turn off "Usage analytics". CollageDeck then stops sending them and deletes its identifier and any events not yet sent from your device; turning them on again creates a new identifier. Events PostHog has already received are kept as described in section 8.</p>
+
+      <h2 id="network">6. Other connections</h2>
       <ul>
         <li>CollageDeck doesn't connect to any server of mine; there isn't one.</li>
         <li>The Privacy Policy, Terms of Use and Support links in CollageDeck open pages of this website in an in-app browser. This website is hosted on GitHub Pages, and GitHub logs visitors' IP addresses for security purposes (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>). The website sets no cookies and runs no analytics.</li>
         <li>If your photos are stored in iCloud Photos, iOS may download the original from iCloud when you choose it in CollageDeck. That happens between your iPhone and Apple.</li>
       </ul>
 
-      <h2 id="not">6. What CollageDeck doesn't do</h2>
+      <h2 id="not">7. What CollageDeck doesn't do</h2>
       <ul>
         <li>No advertising and no advertising identifier.</li>
         <li>No tracking across other companies' apps or websites, and no data brokers.</li>
-        <li>No advertising or marketing services. CollageDeck uses Sentry only to find and fix crashes, errors and freezes and to measure how reliably the app runs (section 4). The short list of recent actions in a report and the usage sessions aren't used for advertising or marketing, or to build a profile of you.</li>
+        <li>No advertising or marketing services. CollageDeck uses Sentry only to find and fix crashes, errors and freezes and to measure how reliably the app runs (section 4), and, if you agree, PostHog only to understand how the app is used (section 5). Crash reports, usage sessions and usage analytics aren't used for advertising or marketing.</li>
         <li>No selling or sharing of personal information for advertising.</li>
         <li>No account or login.</li>
       </ul>
 
-      <h2 id="retention">7. Keeping and deleting data</h2>
+      <h2 id="retention">8. Keeping and deleting data</h2>
       <ul>
         <li><strong>On your iPhone.</strong> Projects stay until you delete them. Deleting a project also deletes its private copies of photos and videos and its previews; CollageDeck offers Undo for a few seconds first. You can remove your export signature in Settings. Deleting CollageDeck from your iPhone deletes its projects, photo and video copies, previews and preferences, apart from backups you made and anything you saved to Photos or shared. One item can remain: iOS may keep the free-export count in the Keychain after CollageDeck is deleted, so it is still there if you install CollageDeck again. It is a single number and identifies nothing about you.</li>
-        <li><strong>Crash reports</strong> are deleted by Sentry after the retention period above.</li>
+        <li><strong>Crash reports</strong> are deleted by Sentry after the retention period in section 4.</li>
+        <li><strong>Usage analytics</strong> are deleted by PostHog after the retention period in section 5.</li>
         <li><strong>Purchase records</strong> are kept by RevenueCat for as long as needed to provide CollageDeck Pro, and by Apple under its own policies.</li>
-        <li><strong>Asking about your data.</strong> CollageDeck has no accounts, so I usually can't tell which crash report or purchase record belongs to you. If you'd like to ask about, receive or delete such data, contact me at mehmetaliakbay@outlook.com. The order ID on your Apple purchase receipt can help find a purchase record.</li>
+        <li><strong>Asking about your data.</strong> CollageDeck has no accounts, so I usually can't tell which crash report, usage event or purchase record belongs to you. If you'd like to ask about, receive or delete such data, contact me at mehmetaliakbay@outlook.com. The order ID on your Apple purchase receipt can help find a purchase record.</li>
       </ul>
 
-      <h2 id="rights">8. Your rights</h2>
+      <h2 id="rights">9. Your rights</h2>
       <p>Depending on where you live, for example in the European Union, the United Kingdom or Türkiye (Law No. 6698 on the Protection of Personal Data, "KVKK"), you may have the right to access, correct or delete personal data about you, to restrict or object to its processing, to receive it in a portable form, and to complain to a data protection authority. Contact me to use these rights.</p>
-      <p>Legal grounds: processing your purchases is necessary to provide the CollageDeck Pro you buy; crash reports and the usage sessions described in section 4 rely on the legitimate interest in keeping CollageDeck working, reliable and secure, and you can object at any time by turning them off as described above.</p>
+      <p>Legal grounds: processing your purchases is necessary to provide the CollageDeck Pro you buy; crash reports and the usage sessions described in section 4 rely on the legitimate interest in keeping CollageDeck working, reliable and secure, and you can object at any time by turning them off as described above. Usage analytics (section 5) rely on your consent, which you can withdraw at any time by turning off "Usage analytics"; withdrawing doesn't affect what was sent before.</p>
 
-      <h2 id="transfers">9. International transfers</h2>
-      <p>RevenueCat and Sentry are based in the United States, and your information may be processed there or in other countries where they or their providers operate. These transfers rely on the providers' data processing terms, including standard contractual clauses where required.</p>
+      <h2 id="transfers">10. International transfers</h2>
+      <p>RevenueCat, Sentry and PostHog are based in the United States. PostHog stores CollageDeck's usage analytics in the European Union (Frankfurt, Germany), though it and its providers may access them from other countries. Your information may be processed in the United States or in other countries where these companies or their providers operate. These transfers rely on the providers' data processing terms, including standard contractual clauses where required.</p>
 
-      <h2 id="children">10. Children</h2>
+      <h2 id="children">11. Children</h2>
       <p>CollageDeck is a general audience app. It isn't directed to children under 13, and I don't knowingly collect personal information from children. The information described above doesn't identify who is using the app.</p>
 
-      <h2 id="changes">11. Changes to this policy</h2>
+      <h2 id="changes">12. Changes to this policy</h2>
       <p>If this policy changes, the new version will be posted on this page with a new date at the top. If a change is significant, I'll also mention it in CollageDeck's release notes.</p>
 
-      <h2 id="contact">12. Contact</h2>
+      <h2 id="contact">13. Contact</h2>
       <p>Mehmet Ali Akbay<br>
       Email: <a href="mailto:mehmetaliakbay@outlook.com">mehmetaliakbay@outlook.com</a></p>
     </div>
